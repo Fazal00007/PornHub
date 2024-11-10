@@ -2,8 +2,10 @@ import sys
 import logging
 import pytz
 import platform
+
 from datetime import datetime
 from importlib import import_module
+from logging.handlers import RotatingFileHandler
 
 from PornHub.bot import PornHub
 from PornHub.plugins import loadModule
