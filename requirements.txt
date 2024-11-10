@@ -8,3 +8,4 @@ pornhub-api==0.3.0
 youtube-dl==2021.6.6
 uvloop
 tgcrypto-pyrofork
+pytz
