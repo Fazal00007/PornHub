@@ -1,0 +1,44 @@
+{
+  "name": "PH Downloader - Telegram",
+  "description": "This bot helps to download PH video through telegram for free!",
+  "keywords": [
+    "video_downloader",
+    "telegramBot",
+    "Telegram_API"
+  ],
+  "website": "https://github.com/aryazakaria01/PornHub",
+  "repository": "https://github.com/aryazakaria01/PornHub",
+  "logo": "https://camo.githubusercontent.com/a81ff3c4947fc9142e48c35f6ae8741392c35ad3d80bdbd0ea97849e631dc9ac/68747470733a2f2f692e706f7374696d672e63632f4a684a7977534d462f6c6f676f372d31302d31343132302e706e67",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "pip3 install -U -r requirements.py",
+    "start": "python3 -m PornHub"
+  },
+  "env": {
+    "API_ID": {
+      "description": "ID of the API",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "The API hash code",
+      "required": true
+    },
+    "TOKEN": {
+      "description": "The Telegram Bot Token",
+      "required": true,
+      "default": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "pip3 install -U pip"
+      }
+    }
+  }
+}
