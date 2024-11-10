@@ -2,7 +2,7 @@ import sys
 import logging
 import pytz
 import platform
-import datetime
+from datetime import database, now
 from importlib import import_module
 
 from PornHub.bot import PornHub
